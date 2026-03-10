@@ -1,0 +1,7 @@
+[game]
+name = "UniverseBox"
+seed = 1337
+
+[simulation]
+tick_rate = 30
+max_entities = 1000
