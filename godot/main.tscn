@@ -1,0 +1,22 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmainscene"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://universe_view.tscn" id="2_view"]
+[ext_resource type="PackedScene" path="res://debug_overlay.tscn" id="3_debug"]
+[ext_resource type="PackedScene" path="res://ui/hud.tscn" id="4_hud"]
+[ext_resource type="Script" path="res://simulation_bridge.gd" id="5_bridge"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_main")
+
+[node name="SimulationBridge" type="Node" parent="."]
+script = ExtResource("5_bridge")
+
+[node name="UniverseView" parent="." instance=ExtResource("2_view")]
+simulation_path = NodePath("../SimulationBridge")
+
+[node name="DebugOverlay" parent="." instance=ExtResource("3_debug")]
+simulation_path = NodePath("../SimulationBridge")
+
+[node name="HUD" parent="." instance=ExtResource("4_hud")]
+simulation_path = NodePath("../SimulationBridge")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://chudscene"]
+
+[ext_resource type="Script" path="res://ui/hud.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://ui/control_panel.tscn" id="2_control"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_script")
+
+[node name="ControlPanel" parent="." instance=ExtResource("2_control")]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 180.0
+offset_bottom = 170.0
