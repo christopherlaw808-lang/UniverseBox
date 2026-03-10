@@ -1,0 +1,7 @@
+{
+  "level": "INFO",
+  "console": true,
+  "file": true,
+  "file_path": "logs/universebox.log",
+  "format": "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+}

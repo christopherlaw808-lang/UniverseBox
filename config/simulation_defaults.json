@@ -1,0 +1,6 @@
+{
+  "tick_seconds": 1.0,
+  "speed_multipliers": [0, 1, 2, 4],
+  "terrain_types": ["water", "plains", "forest", "mountain", "desert"],
+  "resource_types": ["food", "water", "stone", "metal", "energy"]
+}
