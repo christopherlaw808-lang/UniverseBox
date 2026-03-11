@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdebugscene"]
+
+[ext_resource type="Script" path="res://debug_overlay.gd" id="1_script"]
+
+[node name="DebugOverlay" type="CanvasLayer"]
+script = ExtResource("1_script")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 300.0
+offset_bottom = 140.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -6.0
+
+[node name="StatsLabel" type="Label" parent="PanelContainer/MarginContainer"]
+text = "Debug..."

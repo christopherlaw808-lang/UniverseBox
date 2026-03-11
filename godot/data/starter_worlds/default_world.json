@@ -1,0 +1,7 @@
+{
+  "name": "default_world",
+  "seed": 1337,
+  "world_width": 32,
+  "world_height": 24,
+  "description": "Starter deterministic world for first milestone prototyping."
+}
