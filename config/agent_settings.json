@@ -1,0 +1,6 @@
+{
+  "task_queue_file": "agents/tasks.json",
+  "allow_file_deletion": false,
+  "log_level": "INFO",
+  "max_retries": 2
+}

@@ -1,0 +1,9 @@
+{
+  "project_name": "UniverseBox",
+  "version": "0.1.0",
+  "default_seed": 424242,
+  "world_width": 32,
+  "world_height": 20,
+  "default_speed": 1,
+  "log_file": "logs/universebox.log"
+}

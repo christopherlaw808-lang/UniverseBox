@@ -1,0 +1,1 @@
+"""Gameplay extension module namespace."""

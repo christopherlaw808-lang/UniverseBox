@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/universe_view.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/debug_overlay.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/control_panel.tscn" id="5"]
+[ext_resource type="Script" path="res://scripts/simulation_bridge.gd" id="6"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1")
+
+[node name="SimulationBridge" type="Node" parent="."]
+script = ExtResource("6")
+
+[node name="UniverseView" parent="." instance=ExtResource("2")]
+
+[node name="DebugOverlay" parent="." instance=ExtResource("3")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("4")]
+
+[node name="ControlPanel" parent="CanvasLayer" instance=ExtResource("5")]
