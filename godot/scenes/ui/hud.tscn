@@ -1,0 +1,6 @@
+[gd_scene format=3]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Title" type="Label" parent="HUD"]
+text = "UniverseBox"

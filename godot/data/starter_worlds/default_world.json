@@ -1,0 +1,9 @@
+{
+  "name": "starter_world",
+  "seed": 1337,
+  "spawn": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}
